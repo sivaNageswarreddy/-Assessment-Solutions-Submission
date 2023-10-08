@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="calculator.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="calcContainer">
+    <form name="calculator">
+      <!-- top row -->
+      <div class="result-clear">
+        <!-- Display -->
+        <input type="text" class="result" name="answer" readonly />
+
+        <!-- Clear Button -->
+        <input type="button" class="clear" value=" AC" />
+      </div>
+      <!-- All input button -->
+      <div class="grid-buttons">
+        <!-- 2nd row -->
+        <input type="button" value="9" />
+        <input type="button" value="8" />
+        <input type="button" value="7" />
+        <input type="button" value="+" class="math" />
+        <br />
+        <!-- 3rd row -->
+        <input type="button" value="4" />
+        <input type="button" value="5" />
+        <input type="button" value="6" />
+        <input type="button" value="-" class="math" />
+        <br />
+        <!-- 4th row -->
+        <input type="button" value="1" />
+        <input type="button" value="2" />
+        <input type="button" value="3" />
+        <input type="button" value="÷" class="math" />
+        <br />
+        <!-- 5th row -->
+        <input type="button" value="." />
+        <input type="button" value="0" />
+        <input type="button" value="=" />
+        <input type="button" value="×" class="math" />
+      </div>
+    </form>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Customer Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="survey.css" />
+  </head>
+  <body>
+    <h1> Customer Survey Form</h1>
+    <div class="container">
+      
+      <form id="surveyForm">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+        </div>
+        <div class="form-group">
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="usa">INDIA</option>
+            <option value="usa">AUSTRALIA</option>
+            <option value="usa">RUSSIA</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <!-- Add more country options as needed -->
+          </select>
+        </div>
+        <!-- Gender checkboxes -->
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="gender-checkboxes">
+            <input type="checkbox" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="checkbox" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="profession">Profession:</label>
+          <input type="text" id="profession" name="profession" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="mobile">Mobile Number:</label>
+          <input
+            type="tel"
+            id="mobile"
+            name="mobile"
+            pattern="[0-9]{10}"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <div class="button-container">
+            <button type="button" id="resetBtn">Reset</button>
+          </div>
+          <div class="button-container">
+            <button type="button" id="submitBtn">Submit</button>
+          </div>
+         
+        </div>
+        
+      </form>
+    </div>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <h2>Survey Submission Details</h2>
+        <div id="popupDetails"></div>
+      </div>
+    </div>
+    <script src="survey.js"></script>
+  </body>
+</html>
